@@ -1,0 +1,11 @@
+<ul>
+    {% for object in objects_list %}
+        <li>{{ object.title }}</li>
+        <li>{{ object.description }}</li>
+
+        <hr/>
+
+        {%empty%}
+        <li>No objects found</li>
+    {% endfor %} 
+</ul>
