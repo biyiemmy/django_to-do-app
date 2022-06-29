@@ -12,7 +12,7 @@ class TodoAppCreateView(CreateView):
     model = TodoApp
     fields = ['title', 'description']
     template_name = 'home.html'
-    success_url = 'list.html'
+    success_url = 'list'
 
 
 class TodoAppListView(ListView):

@@ -5,7 +5,7 @@ from .views import TodoAppCreateView, TodoAppDeleteView, TodoAppListView, TodoAp
 
 urlpatterns = [
     path('', TodoAppCreateView.as_view(), name='home'),
-    path('list/', TodoAppListView.as_view()),
+    path('list/', TodoAppListView.as_view(), name="list"),
     path('detail/<int:pk>/', TodoAppDetailView.as_view()),
     path('<int:pk>/update', TodoAppUpdateView.as_view()),
     path('delete/<int:pk', TodoAppDeleteView.as_view())
